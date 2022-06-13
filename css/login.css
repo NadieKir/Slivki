@@ -1,0 +1,195 @@
+/* GENERAL */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    background-color: #6123C6;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow-y: scroll;
+}
+
+/* HEADER */
+
+.header {
+    padding-top: 25px;
+}
+
+/* MAIN FORM */
+
+.main-section {
+    margin: 50px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+   
+.main-form {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.main-form a {
+    text-decoration: none;
+    transition: .5s;
+    color: #6123C6;
+}
+
+.main-form a:hover {
+    color: #d6c422;
+}
+
+.main-form ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-form input {
+    display: block;
+    width: 100%;
+}
+
+.tab-form {
+    background-color: #fff;
+    display: none;
+    padding: 30px;
+    border-radius: 0 0 10px 10px;
+}
+
+.tab-form.active{ 
+    display: block;
+}
+
+label.tab {
+    color: #ffffff;
+    font-weight: 600;
+    padding: 15px 31px;
+    display: inline-block;
+    border-radius: 3px 3px 0 0;
+    margin-bottom: -1px;
+    cursor: pointer;
+}
+
+label.tab.active {
+    background-color: #fff; 
+    border-radius: 10px 10px 0 0 ;
+    color: #6123C6;
+}
+
+.tab::before {
+    content: '\f090';
+    font-family: 'FontAwesome', sans-serif;
+    font-size: 24px;
+    margin-right: 11px;
+    font-weight: normal;
+}
+
+.tab.registration::before {
+    content: '\f234';
+}
+
+.input {
+    font-size: 16px;
+    border: 2px solid #e9eaea;
+    padding: 12px 14px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    outline: none;
+}
+
+.box-input>.input~label {
+    color: #7e7e7e;
+}
+
+.error {
+    display: block;
+    font-size: 11px;
+    color: #b52525;
+    margin-bottom: 20px;
+}
+
+
+/* Плавающий текст */
+.box-input {
+    position: relative;
+}
+
+.box-input input {
+    border: none;
+    border-bottom: 2px solid #e9eaea;
+    padding: 5px 0;
+}
+
+.box-input label {
+    pointer-events: none;
+    font-size: 13px;
+    color: #6123C6;
+}
+
+
+/* Капча */
+
+.captcha {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.captcha-img-btn {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.captcha__refresh-btn {
+    font-size: 11px;
+    font-family: Nunito;
+    cursor: pointer;
+}
+
+.captcha .box-input {
+    width: 100%;
+}
+
+/* Эффект кнопки */
+
+.button {
+    border: none;
+    background: #6123C6;
+    border-radius: 8px;
+    color: #ffffff;
+    font-family: Nunito;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+
+    line-height: 46px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+
+    border-bottom: 4px solid #42148a;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background-color: #481698;
+}
+
+
+
+.del {
+    display: none;
+}
+
+.hidden {
+    visibility: hidden;
+}

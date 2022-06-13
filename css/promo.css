@@ -1,0 +1,447 @@
+/* GENERAL */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    color: #000000;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1130px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #000000;
+
+    margin-bottom: 35px;
+}
+
+/* HEADER */
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 0;
+} 
+
+.search {
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    height: 100%;
+    width: 375px;
+    border: 1px solid #A4A4A4;
+    box-sizing: border-box;
+    border-radius: 42px;
+
+    outline: none;
+    padding: 10px 80px 10px 15px;
+}
+
+.search-btn {
+    width: 70px;
+    height: 100%;
+    background: #6123C6;
+    border-radius: 42px;
+    border: none;
+
+    margin-left: -70px;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.search-btn:hover {
+    background: #6a24dc;
+}
+
+.personal-account {
+    display: flex;
+    column-gap: 15px;
+}
+
+.user-name-login-btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.user-name {
+    color: #000000;
+}
+
+.login-btn[type='submit'] {
+    color: #6123C6;
+    border: none;
+    padding: 0;
+    background-color: transparent; 
+    cursor: pointer;
+    font-weight: 700;
+    font-family: Nunito;
+    font-size: 14px;
+}
+
+.login-btn:hover {
+    text-shadow: 0px 0 #6123C6;
+}
+
+/* NAV */
+
+.nav {
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+    background-color: #6123C6;
+}
+
+.nav .menu {
+    display: flex;
+    column-gap: 40px;
+}
+
+.nav .menu li a {
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+
+    text-decoration: none;
+}
+
+.nav .menu li a:hover,
+.active {
+    text-shadow: 0.5px 0 white;
+}
+
+/* BRIEF PROMO */
+
+.brief-promo .container {
+    padding: 55px 0;
+}
+
+.promo-main-heading {
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 35px;
+}
+
+.img-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.promo-img {
+    border-radius: 16px;
+    height: 240px;
+}
+
+.brief-promo-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+
+    width: 560px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #DADADA;
+}
+
+.promo-data {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.promo-data span {
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+.btn-wrapper {
+    margin-top: 30px;
+    display: flex;
+    column-gap: 45px;
+}
+
+.buy-btn {
+    width: 260px;
+    height: 50px;
+    background: #6123C6;
+    border-radius: 12px;
+
+    font-family: Nunito;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+
+    border: none;
+    cursor: pointer;
+}
+
+.buy-btn:hover {
+    background: #6a24dc;
+}
+
+.you-have-promo-message {
+    width: 260px;
+    height: 50px;
+    border: 2px solid #636363;
+    border-radius: 12px;
+
+    font-weight: 600;
+    font-size: 18px;
+    color: #000000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.like-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 110px;
+    height: 50px;
+
+    border: 2px solid #6123C6;
+    box-sizing: border-box;
+    border-radius: 12px;
+
+    cursor: pointer;
+}
+
+.like-count {
+    font-weight: 600;
+    font-size: 17px;
+
+    margin-left: 7px;
+}
+
+/* FULL PROMO DESCRIPTION */
+
+.full-promo-desc .container {
+    padding: 10px 0 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.secondary-promo-heading {
+    font-weight: 600;
+    font-size: 21px;
+
+    margin-bottom: 20px;
+}
+
+.conditions .promo-list {
+    width: 690px;
+}
+
+.promo-list {
+    list-style: none;
+}
+
+.promo-list li {
+    margin-bottom: 10px;
+}
+
+.dotted-list {
+    list-style: url('/img/circle.svg');
+    margin-left: 15px;
+}
+
+.dotted-list li {
+    padding-left: 10px;
+}
+
+.about-owner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+
+    width: 290px;
+}
+
+.line-list {
+    display: block;
+    border-left: 2px solid #6123C6;;
+}
+
+.line-list li {
+    padding-left: 15px;
+}
+
+/* MODAL */
+
+.buy-promo-modal-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.buy-promo-modal {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 750px;
+    padding: 50px 80px;
+
+    background: #FFFFFF;
+    border: 3px solid #6123C6;
+    box-sizing: border-box;
+
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 35px;
+}
+
+.buy-promo-heading {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.bought-promo-brief {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.last-promo-data {
+    margin-top: 30px;
+}
+
+.account-btn {
+    width: 210px;
+    height: 45px;
+    background: #6123C6;
+    border-radius: 9px;
+
+    font-family: Nunito;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.account-btn:hover {
+    background: #6a24dc;
+}
+
+.green {
+    color: #169422;
+}
+
+.red {
+    color: #AC0000;
+}
+
+.hidden {
+    display: none;
+}
+
+/* FOOTER */
+
+.footer {
+    background: #272727;
+    color: #FFFFFF;
+}
+
+.footer .main-container {
+    padding: 40px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info-wrapper {
+    display: flex;
+    column-gap: 60px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.footer-heading {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.footer-info span {
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.footer-line {
+    border-top: 1px solid #676767;
+    height: 2px;
+}
+
+.footer .secondary-container {
+    padding: 20px 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+
+
